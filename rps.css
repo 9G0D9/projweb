@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+}
+
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #CFFDE1;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  .intro {
+    margin-top: 100px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    background-color: #5F9DF7;
+    border: 5px solid #1746A2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  h3 {
+    font-size: 40px;
+  }
+  
+  .rules {
+    flex: 1;
+    
+  }
+  
+ 
+  
+  .r {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 300px;
+  }
+  
+  .descriptive-img {
+    flex: 1;
+  }
+  
+  img {
+    max-width: 50vw;
+    max-height: 300px;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .button{
+      max-width: 300px;
+      height: auto;
+      margin: 50px;
+  }
+  .result {
+    margin-top: 20px;
+    padding: 15px 35px;
+    border-radius: 50px;
+    background-color: #5F9DF7;
+    border: 5px solid #1746A2;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link
+      rel="stylesheet"
+      href="/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="img/logo.png" alt="" srcset="" /></div>
+      <h1 class="title">Pass Your Time</h1>
+      <div class="navbar">
+        <ul id="nav">
+          <li class="l"><a class="a" href="home.html">Home </a></li>
+          <li class="l"><a class="a" href="profile.html">Profile</a></li>
+          <li class="l"><a class="a" href="etch.html">Sketch</a></li>
+          <li class="l"><a class="a" href="rps.html">RPS</a></li>
+          <li class="l"><a class="a" href="index.html">Logout</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <div class="firstname"><p>First Name</p></div>
+      <div class="fn"><p id="fn">"</p></div>
+
+      <div class="lastname"><p>Last Name</p></div>
+      <div class="ln"><p id="ln"></p></div>
+
+      <div class="mail"><p>Mail</p></div>
+      <div class="m"><p id="m"></p></div>
+
+      <div class="totalgames"><p>Games</p></div>
+      <div class="games"><p id="g">Total: </p></div>
+      <div class="won"><p id="w">Won: </p></div>
+      <div class="lost"><p id="l">Lost: </p></div>
+    </div>
+
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <img src="img/logo.png" alt="" />
+
+        <p class="footer-company-name">Etch A Sketch © Ghassen DHieb</p>
+      </div>
+
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>ESSAI</span> Charguiya 2</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+216 29406908</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">dhiebghassen@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the website</span>
+          Here you can come pass your time !!
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  let fn = document.getElementById("fn");
+  let ln = document.querySelector("#ln");
+  let m = document.querySelector("#m");
+  let g = document.querySelector("#g");
+  let w = document.querySelector("#w");
+  let l = document.querySelector("#l");
+  fn.innerHTML = localStorage.getItem("fname");
+  ln.innerHTML = localStorage.getItem("lname");
+  m.innerHTML = localStorage.getItem("mail");
+  g.innerHTML = g.textContent + localStorage.getItem("games");
+  w.innerHTML = w.textContent+ localStorage.getItem("w");
+  l.innerHTML = l.textContent+localStorage.getItem("l");
+</script>

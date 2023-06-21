@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: black;
+  font-size: 20px;
+  font-family: "Righteous", cursive;
+}
+body {
+  background-color: #cffde1;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    margin: 100px auto ;
+    grid-template-areas: 
+    "firstname firstname firstname fn fn fn"
+    "lastname lastname lastname ln ln ln"
+    "mail mail mail m m m"
+    "totalgames totalgames totalgames games won lost" ;
+}
+.container>div{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.firstname{
+    border: 2px solid black;
+    grid-area: firstname;
+   
+}
+.fn{
+    border: 2px solid black;
+    grid-area: fn;
+    
+}
+.lastname{
+    border: 2px solid black;
+    grid-area: lastname;
+}
+.ln{
+    border: 2px solid black;
+    grid-area: ln;
+}
+.mail{
+    border: 2px solid black;
+    grid-area: mail;
+}
+.m{
+    border: 2px solid black;
+    grid-area: m;
+}
+.totalgames{
+    border: 2px solid black;
+    grid-area: totalgames;
+}
+.games{
+    border: 2px solid black;
+    grid-area: games;
+}
+.won{
+    border: 2px solid black;
+    grid-area: won;
+}
+.lost{
+    border: 2px solid black;
+    grid-area: lost;
+}

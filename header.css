@@ -18,6 +18,9 @@ img {
   font-size: 60px;
   width: 60%;
   padding: 0 150px 0 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .navbar {
   background-color: #ff731d;
